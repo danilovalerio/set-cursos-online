@@ -1,5 +1,9 @@
 package aplicacao;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Programa {
 	/*
 	 * Em um portal de cursos online, cada usuário possui um código único, 
@@ -17,6 +21,17 @@ public class Programa {
 	 */
 
 	public static void main(String[] args) {
+		Set<Integer> cuA = new HashSet<>(Arrays.asList(21,35,22));
+		Set<Integer> cuB = new HashSet<>(Arrays.asList(21,50));
+		Set<Integer> cuC = new HashSet<>(Arrays.asList(42,35,13));
+		
+		Set<Integer> total = new HashSet<>(cuA);
+		total.addAll(cuB);
+		total.addAll(cuC);
+		
+		System.out.println("Total de alunos: "+total.size());
+		
+		
 		
 
 	}
