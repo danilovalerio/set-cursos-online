@@ -25,14 +25,14 @@ public class Programa {
 		Set<Integer> cuB = new HashSet<>(Arrays.asList(21,50));
 		Set<Integer> cuC = new HashSet<>(Arrays.asList(42,35,13));
 		
+		//Criado um set total que recebe a cópia de cuA (curso a) 
 		Set<Integer> total = new HashSet<>(cuA);
+		//addAll que é a união do atual com o que recebe, assim unindo cuB e cuC 
+		//descartando os códigos repetidos
 		total.addAll(cuB);
 		total.addAll(cuC);
 		
 		System.out.println("Total de alunos: "+total.size());
-		
-		
-		
 
 	}
 
